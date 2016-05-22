@@ -7,6 +7,12 @@
 
     <h1>Users</h1>
 
+    @if(Session::has('user_deleted')) <p class="alert alert-success">{{session('user_deleted')}}</p> @endif
+
+    @if(Session::has('user_updated')) <p class="alert alert-success">{{session('user_updated')}}</p> @endif
+
+    @if(Session::has('user_created')) <p class="alert alert-success">{{session('user_created')}}</p> @endif
+
     <table class="table table-hover">
         <thead>
           <tr>
